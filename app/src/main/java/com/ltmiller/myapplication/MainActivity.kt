@@ -1,5 +1,6 @@
 package com.ltmiller.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
     fun loginBtnNavClick(view: View){
 
+        val loginIntent = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntent)
 
     }
 
